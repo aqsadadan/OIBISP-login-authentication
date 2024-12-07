@@ -1,0 +1,47 @@
+/* Container for the background image and sliding effect */
+.slider-container {
+    position: relative;
+    height: 80vh; /* Full height for the sliding effect */
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    transition: transform 1s ease-in-out;
+  }
+  
+  /* Content (text and buttons) on top of the image */
+  .content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-align: center;
+  }
+  
+  /* Dot navigation container */
+  .dots-container {
+    position: absolute;
+    bottom: 10px; /* Position the dots at the bottom */
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  /* Dot styling */
+  .dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .dot.active {
+    background-color: red; /* Active dot color */
+  }
+  
